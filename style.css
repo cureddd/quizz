@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.result {
+    font-family: 'Pacifico', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+font-family:  'Montserrat', sans-serif;
+align-items: center;
+
+
+
+}
+.container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+    
+    width: 100vw; 
+    height: 100vh; 
+    max-width: none; 
+    min-height: none; 
+    
+
+
+}
+.start-container{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 100px;
+    flex-direction: column; 
+    background-color: #e6f3ff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 5;
+
+}
+.quiz-title {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    padding: 15px 25px; 
+    margin-top: 20px;
+    width: 70%; 
+    max-width: 500px; 
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    white-space: nowrap; 
+    overflow: visible; 
+    text-overflow: clip;
+}
+ .question{
+font-size:80px;
+font-family:Montserrat, sans-serif;
+ }
+.answers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.answer{
+    border:1px solid black;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px;
+    justify-content: center;
+    text-align:center;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.correct{
+    border:1px solid black;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px;
+
+}
+.button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    
+    margin:30px;
+    
+
+}
+.button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.07);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(0, 123, 255, 0.2);
+}
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #003f7f, transparent;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.3); 
+}
+.timer {
+    top: 30px; 
+    right: 30px;
+    position: absolute;
+    
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50%; /* Робимо круглу іконку */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    z-index: 10; 
+}
